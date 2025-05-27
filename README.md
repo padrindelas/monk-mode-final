@@ -1,2 +1,3 @@
-# monk-mode-final
-Painel pessoal estilo Jarvis para hábitos, produtividade e ideias.
+# Monk Mode Hub
+
+Follow setup instructions to run frontend and backend.

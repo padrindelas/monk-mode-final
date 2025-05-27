@@ -1,0 +1,29 @@
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Task {
+  id        Int     @id @default(autoincrement())
+  title     String
+  time      String
+  completed Boolean
+}
+
+model Habit {
+  id       Int    @id @default(autoincrement())
+  name     String
+  frequency Int
+}
+
+model Idea {
+  id    Int    @id @default(autoincrement())
+  title String
+  note  String
+}
+    
